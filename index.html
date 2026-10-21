@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>omarchy-calendar</title>
+<meta name="description" content="Widget de calendario para Omarchy que muestra los eventos de Google Calendar en el panel del reloj.">
+<!-- Verificación de Google Search Console: pega aquí la etiqueta meta que te dé Google
+     antes de publicar la app en Google Cloud. -->
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 3rem 1.25rem 4rem;
+    background: #101014;
+    color: #e7e7ea;
+    font: 16px/1.65 -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); margin: 0 0 .25rem; letter-spacing: -.02em; }
+  .sub { color: #9a9aa6; margin: 0 0 2.2rem; }
+  h2 { font-size: 1.05rem; text-transform: uppercase; letter-spacing: .08em; color: #9a9aa6; margin: 2.4rem 0 .8rem; font-weight: 600; }
+  ul { padding-left: 1.15rem; }
+  li { margin: .35rem 0; }
+  a { color: #7fb0ff; }
+  code { background: #1c1c22; padding: .12rem .38rem; border-radius: 4px; font-size: .9em; }
+  footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid #26262e; color: #7c7c88; font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>omarchy-calendar</h1>
+  <p class="sub">Widget de calendario para <a href="https://omarchy.org/">Omarchy</a> con eventos de Google Calendar.</p>
+
+  <p>
+    <strong>omarchy-calendar</strong> es una aplicación de escritorio de uso personal. Añade al
+    panel del reloj de Omarchy un calendario completo: cuadrícula mensual con puntos de color por
+    calendario, vista anual, detalle del día, agenda de próximos eventos, feriados de Panamá,
+    amanecer y atardecer, y avisos de escritorio antes de que empiece cada evento.
+  </p>
+
+  <h2>Qué hace</h2>
+  <ul>
+    <li>Lee los calendarios de la propia cuenta de Google del usuario mediante la API de Google Calendar (OAuth&nbsp;2.0).</li>
+    <li>Sincroniza en segundo plano y guarda una copia local para que el panel funcione sin conexión.</li>
+    <li>Muestra los eventos y envía notificaciones locales de escritorio.</li>
+  </ul>
+
+  <h2>Dónde van los datos</h2>
+  <ul>
+    <li>Todo se queda en el equipo del usuario: no hay servidores propios ni intermediarios.</li>
+    <li>Ningún dato se comparte con terceros, ni se usa para publicidad, ni para entrenar modelos.</li>
+  </ul>
+
+  <h2>Privacidad</h2>
+  <p>Detalles completos en la <a href="privacidad.html">política de privacidad</a>.</p>
+
+  <footer>
+    Aplicación personal de Francisco González Moreno ·
+    <a href="mailto:franciscogonzalezmoreno@gmail.com">franciscogonzalezmoreno@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
